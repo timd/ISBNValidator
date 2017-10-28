@@ -12,8 +12,6 @@
 		57AE78EB1FA4A155004F882E /* ISBNValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 57AE78DD1FA4A155004F882E /* ISBNValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		57AE78F51FA4A326004F882E /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57AE78F61FA4A326004F882E /* Quick.framework */; };
 		57AE78F71FA4A339004F882E /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57AE78F81FA4A339004F882E /* Nimble.framework */; };
-		57AE78F91FA4A3DA004F882E /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57AE78FA1FA4A3DA004F882E /* Quick.framework */; };
-		57AE78FB1FA4A3DF004F882E /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57AE78FC1FA4A3DF004F882E /* Nimble.framework */; };
 		57AE78FE1FA4A51A004F882E /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AE78FD1FA4A51A004F882E /* Validator.swift */; };
 		57AE79001FA4A590004F882E /* RGBUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AE78FF1FA4A590004F882E /* RGBUIColor.swift */; };
 		57AE79011FA4A590004F882E /* RGBUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AE78FF1FA4A590004F882E /* RGBUIColor.swift */; };
@@ -49,8 +47,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57AE78FB1FA4A3DF004F882E /* Nimble.framework in Frameworks */,
-				57AE78F91FA4A3DA004F882E /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
