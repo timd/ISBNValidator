@@ -17,10 +17,6 @@ class ISBNValidatorTests: QuickSpec {
         
         describe("Validator") {
 
-            it("works") {
-                expect(true).to(beTrue())
-            }
-            
             it("should return false when ISBN is less than 13 digits", closure: {
                 let result = Validator(isbn: "1234567890")
                 expect(result).to(beFalse())
