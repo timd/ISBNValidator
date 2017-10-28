@@ -18,22 +18,22 @@ class ISBNValidatorTests: QuickSpec {
         describe("Validator") {
 
             it("should return false when ISBN is less than 13 digits", closure: {
-                let result = Validator(isbn: "1234567890")
+                let result = ISBNValidator(isbn: "1234567890")
                 expect(result).to(beFalse())
             })
 
             it("should return false when ISBN is more than 13 digits", closure: {
-                let result = Validator(isbn: "123456789012345")
+                let result = ISBNValidator(isbn: "123456789012345")
                 expect(result).to(beFalse())
             })
 
             it("should return true when ISBN is valid 13", closure: {
-                let result = Validator(isbn: "9780547928227")
+                let result = ISBNValidator(isbn: "9780547928227")
                 expect(result).to(beTrue())
             })
             
             it("should return false when ISBN is invalid 13", closure: {
-                let result = Validator(isbn: "9780547928226")
+                let result = ISBNValidator(isbn: "9780547928226")
                 expect(result).to(beFalse())
             })
             

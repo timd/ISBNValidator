@@ -8,7 +8,7 @@
 
 import Foundation
 
-public func Validator(isbn: String) -> Bool {
+public func ISBNValidator(isbn: String) -> Bool {
     
     // reject long or short ISBNs
     if (isbn.count != 13) {
