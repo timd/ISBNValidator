@@ -10,6 +10,13 @@
 		57AE78E41FA4A155004F882E /* ISBNValidator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57AE78DA1FA4A155004F882E /* ISBNValidator.framework */; };
 		57AE78E91FA4A155004F882E /* ISBNValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AE78E81FA4A155004F882E /* ISBNValidatorTests.swift */; };
 		57AE78EB1FA4A155004F882E /* ISBNValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 57AE78DD1FA4A155004F882E /* ISBNValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		57AE78F51FA4A326004F882E /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57AE78F61FA4A326004F882E /* Quick.framework */; };
+		57AE78F71FA4A339004F882E /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57AE78F81FA4A339004F882E /* Nimble.framework */; };
+		57AE78F91FA4A3DA004F882E /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57AE78FA1FA4A3DA004F882E /* Quick.framework */; };
+		57AE78FB1FA4A3DF004F882E /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57AE78FC1FA4A3DF004F882E /* Nimble.framework */; };
+		57AE78FE1FA4A51A004F882E /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AE78FD1FA4A51A004F882E /* Validator.swift */; };
+		57AE79001FA4A590004F882E /* RGBUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AE78FF1FA4A590004F882E /* RGBUIColor.swift */; };
+		57AE79011FA4A590004F882E /* RGBUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AE78FF1FA4A590004F882E /* RGBUIColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +36,12 @@
 		57AE78E31FA4A155004F882E /* ISBNValidatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ISBNValidatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		57AE78E81FA4A155004F882E /* ISBNValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISBNValidatorTests.swift; sourceTree = "<group>"; };
 		57AE78EA1FA4A155004F882E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57AE78F61FA4A326004F882E /* Quick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Quick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57AE78F81FA4A339004F882E /* Nimble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57AE78FA1FA4A3DA004F882E /* Quick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Quick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57AE78FC1FA4A3DF004F882E /* Nimble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57AE78FD1FA4A51A004F882E /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		57AE78FF1FA4A590004F882E /* RGBUIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBUIColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +49,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57AE78FB1FA4A3DF004F882E /* Nimble.framework in Frameworks */,
+				57AE78F91FA4A3DA004F882E /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57AE78F71FA4A339004F882E /* Nimble.framework in Frameworks */,
+				57AE78F51FA4A326004F882E /* Quick.framework in Frameworks */,
 				57AE78E41FA4A155004F882E /* ISBNValidator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -56,6 +73,7 @@
 				57AE78DC1FA4A155004F882E /* ISBNValidator */,
 				57AE78E71FA4A155004F882E /* ISBNValidatorTests */,
 				57AE78DB1FA4A155004F882E /* Products */,
+				57AE78F41FA4A326004F882E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +91,8 @@
 			children = (
 				57AE78DD1FA4A155004F882E /* ISBNValidator.h */,
 				57AE78DE1FA4A155004F882E /* Info.plist */,
+				57AE78FD1FA4A51A004F882E /* Validator.swift */,
+				57AE78FF1FA4A590004F882E /* RGBUIColor.swift */,
 			);
 			path = ISBNValidator;
 			sourceTree = "<group>";
@@ -84,6 +104,17 @@
 				57AE78EA1FA4A155004F882E /* Info.plist */,
 			);
 			path = ISBNValidatorTests;
+			sourceTree = "<group>";
+		};
+		57AE78F41FA4A326004F882E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				57AE78FC1FA4A3DF004F882E /* Nimble.framework */,
+				57AE78FA1FA4A3DA004F882E /* Quick.framework */,
+				57AE78F81FA4A339004F882E /* Nimble.framework */,
+				57AE78F61FA4A326004F882E /* Quick.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +179,7 @@
 				TargetAttributes = {
 					57AE78D91FA4A155004F882E = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 					57AE78E21FA4A155004F882E = {
@@ -196,6 +228,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57AE78FE1FA4A51A004F882E /* Validator.swift in Sources */,
+				57AE79001FA4A590004F882E /* RGBUIColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				57AE78E91FA4A155004F882E /* ISBNValidatorTests.swift in Sources */,
+				57AE79011FA4A590004F882E /* RGBUIColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +369,7 @@
 		57AE78EF1FA4A155004F882E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -347,6 +383,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = de.duckett.ISBNValidator;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -355,6 +392,7 @@
 		57AE78F01FA4A155004F882E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -376,6 +414,7 @@
 		57AE78F21FA4A155004F882E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XMUJNQ4J82;
 				INFOPLIST_FILE = ISBNValidatorTests/Info.plist;
@@ -390,6 +429,7 @@
 		57AE78F31FA4A155004F882E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XMUJNQ4J82;
 				INFOPLIST_FILE = ISBNValidatorTests/Info.plist;
