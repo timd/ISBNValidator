@@ -17,7 +17,7 @@ Not yet.
 # Usage
 
 1. Import the framework into the class: `import ISBNValidator`
-1. Call the ISBNValidator:
+1. Call the `ISBNValidator`:
 ```
         let validIsbn = "9780547928227"
         let validResult = ISBNValidator(isbn: validIsbn)
