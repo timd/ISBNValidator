@@ -10,17 +10,20 @@ import Foundation
 
 public func ISBNValidator(isbn: String) -> Bool {
     
+    // remove spaces or dashes
+    let cleanIsbn = cleanISBN(isbn: isbn)
+    
     // reject long or short ISBNs
-    if (isbn.count != 13) {
+    if (cleanIsbn.count != 13) {
         return false
     }
     
     // Get check digit
-    let lastIndex = isbn.index(before: isbn.endIndex)
+    let lastIndex = isbn.index(before: cleanIsbn.endIndex)
     
-    let checkDigit = Int(String(isbn[lastIndex]))
+    let checkDigit = Int(String(cleanIsbn[lastIndex]))
     
-    let sum = calculateLongDigitSum(forISBN: isbn)
+    let sum = calculateLongDigitSum(forISBN: cleanIsbn)
     
     let modulo = sum % 10
     
@@ -32,6 +35,12 @@ public func ISBNValidator(isbn: String) -> Bool {
         
     return false
         
+}
+
+func cleanISBN(isbn: String) -> String {
+    
+    return isbn.components(separatedBy: CharacterSet.decimalDigits.inverted).joined()
+    
 }
 
 func calculateLongDigitSum(forISBN: String) -> Int {

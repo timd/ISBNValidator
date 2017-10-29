@@ -51,6 +51,28 @@ class ISBNValidatorTests: QuickSpec {
             
         }
         
+        describe("ISBN cleaning") {
+            
+            it("should remove dashes from the ISBN", closure: {
+                let startISBN = "978-0547928227"
+                let cleanedISBN = cleanISBN(isbn: startISBN)
+                expect(cleanedISBN).to(equal("9780547928227"))
+            })
+            
+            it("should remove spaces from the ISBN", closure: {
+                let startISBN = "978 0547928227 "
+                let cleanedISBN = cleanISBN(isbn: startISBN)
+                expect(cleanedISBN).to(equal("9780547928227"))
+            })
+            
+            it("should remove non-decimal characters from the ISBN", closure: {
+                let startISBN = "978A0547928227B"
+                let cleanedISBN = cleanISBN(isbn: startISBN)
+                expect(cleanedISBN).to(equal("9780547928227"))
+            })
+            
+        }
+        
         describe("internal calculations") {
             
             it("should calculate the long internal sum correctly", closure: {
