@@ -13,23 +13,17 @@ public func ISBNValidator(isbn: String) -> Bool {
     // remove spaces or dashes
     let cleanIsbn = cleanISBN(isbn: isbn)
     
-    // reject long or short ISBNs
+    // reject ISBN with wrong length
     if (cleanIsbn.count != 13) {
         return false
     }
     
     // Get check digit
-    let lastIndex = isbn.index(before: cleanIsbn.endIndex)
+    let lastIndex = cleanIsbn.index(before: cleanIsbn.endIndex)
     
-    let checkDigit = Int(String(cleanIsbn[lastIndex]))
+    let checkDigit = String(cleanIsbn[lastIndex])
     
-    let sum = calculateLongDigitSum(forISBN: cleanIsbn)
-    
-    let modulo = sum % 10
-    
-    let calculatedCheckDigit = 10 - modulo
-        
-    if checkDigit == calculatedCheckDigit {
+    if checkDigit == calculateCheckDigit(forISBN: cleanIsbn) {
         return true
     }
         
@@ -38,9 +32,24 @@ public func ISBNValidator(isbn: String) -> Bool {
 }
 
 func cleanISBN(isbn: String) -> String {
-    
     return isbn.components(separatedBy: CharacterSet.decimalDigits.inverted).joined()
+}
+
+func calculateCheckDigit(forISBN: String) -> String {
     
+    // Get check digit
+    let sum = calculateLongDigitSum(forISBN: forISBN)
+    
+    let modulo = sum % 10
+    
+    var calculatedCheckDigit = 10 - modulo
+    
+    if calculatedCheckDigit == 10 {
+        calculatedCheckDigit = 0
+    }
+    
+    return String(calculatedCheckDigit)
+
 }
 
 func calculateLongDigitSum(forISBN: String) -> Int {

@@ -16,6 +16,9 @@ class ISBNValidatorTests: QuickSpec {
     override func spec() {
         
         describe("Validator") {
+        }
+        
+        describe("When handling ISBN-13") {
 
             it("should return false when ISBN is less than 13 digits", closure: {
                 let result = ISBNValidator(isbn: "1234567890")
@@ -38,17 +41,16 @@ class ISBNValidatorTests: QuickSpec {
             })
             
         }
-        
+
         describe("conversion") {
             
-            it("should convert from valid 10 to valid 13", closure: {
-                
+            it("should calculate checkdigits correctly for ISBN-13s", closure: {
+                let isbn = "9780547928227"
+                let expectedCheckDigit = "7"
+                let receivedCheckDigit = calculateCheckDigit(forISBN: isbn)
+                expect(receivedCheckDigit).to(equal(expectedCheckDigit))
             })
-            
-            it("should not convert invalid 10", closure: {
-                
-            })
-            
+
         }
         
         describe("ISBN cleaning") {
